@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 type User = {
   id: string;
@@ -379,22 +379,22 @@ export default function MessagingInterface() {
       user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  const TypingIndicator = () => (
-    <div className="flex space-x-1">
-      <div
-        className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
-        style={{ animationDelay: "0ms" }}
-      ></div>
-      <div
-        className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
-        style={{ animationDelay: "200ms" }}
-      ></div>
-      <div
-        className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
-        style={{ animationDelay: "400ms" }}
-      ></div>
-    </div>
-  );
+  // const TypingIndicator = () => (
+  //   <div className="flex space-x-1">
+  //     <div
+  //       className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+  //       style={{ animationDelay: "0ms" }}
+  //     ></div>
+  //     <div
+  //       className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+  //       style={{ animationDelay: "200ms" }}
+  //     ></div>
+  //     <div
+  //       className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+  //       style={{ animationDelay: "400ms" }}
+  //     ></div>
+  //   </div>
+  // );
 
   return (
     <div className="flex flex-col h-screen bg-gray-100">
